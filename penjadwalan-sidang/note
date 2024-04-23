@@ -1,0 +1,37 @@
+case
+
+user input sidang  = 14.00
+waktu presentasi = input waktu sidang + 2 jam
+
+input sidang -> 16.00
+
+var finish_sidang = 16.00
+
+kapan mulai nya
+
+user input = start_presentasi ( contoh ) 13.00
+
+jadi
+
+waktu_awal = 13.00
+waktu_akhir = 16.00
+
+how to query in database ( date time ) to find ( room avail )
+
+
+Ruang A ( telah di booking ) = jam 13.00 selesai 15.00 ( hasil database 13.00 )
+user_request = 13.01
+waktu_akhir = 15.00
+
+
+Carikan saya ruangan yang dimana nama ruangan sama dengan ruangan yang diminta user
+yang dimana waktunya dimulai dari 13.00 dan berakhir di 15.00
+jika ada kembalikan error
+jika tidak maka ruangannya avilable
+
+test case
+1. buat user pengajuan 4 orang // done
+2. disetujui admin semua // done
+3. membuat file ppt semua // done
+4. masuk kedalam team yang sama //done
+5. jadwalkan 1 orang

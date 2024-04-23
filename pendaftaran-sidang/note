@@ -1,0 +1,53 @@
+"RLPIC",
+"RLPBB",
+"RLPGJ",
+"RLDSN"
+"RLMHS"
+"RLADM"
+"RLPPM"
+"RLSPR"
+
+Next Task
+- menambahkan nama pada status logs
+
+More Improve ( late latency )
+- add member ( 7 detik ) ( solusi sertakan team id pada request ) -> sekarang 2 - 3 detik
+- leave group ( 5 detik ) ( solusi sertakan team id pada request ) -> sekarang 3 - 6 detik
+- delete group ( 5 detik ) ( solved ) -> 1 detik ( sertakan goroutine )
+
+
+
+pengajuan
+1. ditolak oleh admin // ketika admin nolak pengajuan
+2. belum disetujui admin // awal pengajuan
+3. telah disetujui admin // ketika admin menyetujui pengajuan
+4. tidak lulus (belum dijadwalkan) // ketika mahasiswa tidak lulus sidang namun sudah melakukan pengajuan / update document
+
+team
+1. belum dijadwalkan // ketika di addmember atau membuat team atau membuat individu
+
+schedule
+1. sudah dijadwalkan // ketika pic sudah menjadwalkan mahasiswa yang sudah mempunyai team
+
+status list
+5. tidak lulus (sudah update dokumen) //
+6. belum dilaksanakan //
+8. disetujui oleh pembimbing 2 // tidak digunakan
+9. disetujui oleh pembimbing 1 // tidak digunakan
+10. tidak lulus // dilakukan setelah sidang
+11. reset status //
+12. pengajuan //
+14. lulus //
+
+schedule
+15. belum dilaksanakan //
+16. sedang dilaksanakan //
+17. sudah dikirim //
+18. sedang dikerjakan //
+19. sedang dilaksanakan //
+20. telah dilaksanakan //
+
+
+sudo docker container create --name pendaftaran_sidang_container -p 8080:3000 --network mysqlnetwork pendaftaran_sidang_image
+sudo docker container start [docker conatiner name]
+sudo docker container create --name mysql-container --env MYSQL_ROOT_PASSWORD=root --network mysqlnetwork mysql:8.3.0
